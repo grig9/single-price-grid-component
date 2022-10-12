@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  font-size: 16px;
+  background-color: hsl(204deg, 43%, 93%);
+}
+body h1 {
+  text-align: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 650px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.row-1 {
+  padding: 40px;
+  grid-column: 1/span 12;
+  grid-row: 1/span 1;
+}
+.row-1 h2 {
+  color: hsl(179deg, 62%, 43%);
+  font-weight: 700;
+}
+.row-1 h3 {
+  margin-top: 30px;
+  color: hsl(71deg, 73%, 54%);
+  font-weight: 700;
+}
+.row-1 p {
+  margin-top: 15px;
+  color: hsl(218deg, 22%, 67%);
+  line-height: 28px;
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1/span 12;
+  grid-row: 2/span 1;
+}
+
+.col-1 {
+  padding: 40px;
+  grid-column: 1/span 6;
+  background-color: hsl(179deg, 62%, 43%);
+  border-radius: 0 0 0 10px;
+}
+.col-1 h3 {
+  color: hsl(204deg, 43%, 93%);
+}
+.col-1 .cost {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.col-1 .cost .price {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.col-1 .cost .per-month {
+  color: hsl(204deg, 43%, 93%);
+  font-weight: 400;
+}
+.col-1 p {
+  margin-top: 10px;
+  color: #fff;
+}
+.col-1 .sing-up {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: hsl(71deg, 73%, 54%);
+  text-align: center;
+  border-radius: 5px;
+}
+.col-1 .sing-up a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.col-2 {
+  padding: 40px;
+  grid-column: 7/span 6;
+  background-color: hsl(179deg, 47%, 52%);
+  border-radius: 0 0 10px 0;
+}
+.col-2 h3 {
+  color: #fff;
+}
+.col-2 ul {
+  margin-top: 15px;
+  color: hsl(204deg, 43%, 93%);
+  list-style: none;
+}
+.col-2 ul li {
+  line-height: 22px;
+}
+
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (max-width: 376px) {
+  .card {
+    width: 350px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .row-1 {
+    grid-column: 1/span 12;
+    grid-row: 1/span 1;
+  }
+  .row-2 {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column: 1/span 12;
+    grid-row: 2/span 2;
+  }
+  .row-2 .col-1 {
+    grid-column: 1/span 12;
+    grid-row: 1/span 1;
+    border-radius: 0;
+    padding: 20px;
+  }
+  .row-2 .col-2 {
+    grid-column: 1/span 12;
+    grid-row: 2/span 1;
+    border-radius: 0;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
